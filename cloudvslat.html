@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- style sheet code link-->
+
+    <link rel="stylesheet" href="webstyles.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>Latitude vs Cloudiness</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+
+    <header>
+
+      <div class="position">
+        <div class="center">
+          <div class="DCHeader">
+            <h1>WEB DESIGN HOMEWORK</h1>
+          </div>
+          <div class="DCHeaderText">
+            <H3>A PLOT JOURNEY</H3>
+          </div>  
+        </div>
+        </div> 
+
+
+    
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+      
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                  </li>
+                  <a class="nav-link" href="plots.html">Plots</a>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Compare
+                    </a>
+                
+                    
+                    <!--Drop down menu nav-->
+      
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="windvslat.html">Latitude vs Windspeed</a></li>
+                      <li><a class="dropdown-item" href="humvslat.html">Latitude vs Humidity</a></li>
+                      <li><a class="dropdown-item" href="cloudvslat.html">Latitude vs Cloudiness</a></li>
+                      <li><a class="dropdown-item" href="TempLat.html">Latitude vs Max Temperature</a></li>
+                    </ul>
+                  </li>
+                </ul>
+
+            </div>
+            </div>
+            </nav>
+            
+</header>
+
+<div class="center">
+
+      
+          <img src="Images/fig3.png" alt="Latitude vs Cloudiness" width = "500" height="600">
+      <h1>City Latitude vs Cloudiness Results</h1>
+            <p class="description"> As per our results, it seems that cloud coverage tends to cluster around high and low cloudiness. 
+                At a glance, there does not seem to be a strong correlation between cloudiness and latitude.
+                Upon a closer look, there seems to be certain latitudes which have a concentration of cities with either many clouds or 
+                no cloud coverage at all. On this day, there seemed to be a cluster of cities with no or very little cloud coverage from
+                just under 10 degrees latitude to 70 degrees latitude. There is a similar cluster from -10 degrees to -40 degrees latitude.
+            
+</div>     
+</div>
+
+<div class="welcome-code">
+    <div class="center">
+      <h1>VIEW MORE RESULTS</h1>
+      <p>Select from one of the images to learn more about each graph. 
+      </p>
+</div>
+</div>
+<br>
+
+<!--The Graph Layout-->
+
+<div class="center">
+    <div class="row align-items-center"> 
+      <div class="col-lg-3">
+          <a href="cloudvslat.html">
+              <img src="Images/fig3.png"
+              alt = "City Latitude vs Cloudiness" height="auto" width="100%">
+              <a href="cloudvslat.html"> <button type="button" class="btn btn-outline-dark">Learn More</button> </a>
+          </a>
+      </div>
+      <div class="col-lg-3">
+          <a href="TempLat.html">
+              <img src="Images/fig1.png"
+              alt = "City Latitude vs Max Temperature" height="auto" width="100%">
+              <a href="TempLat.html"> <button type="button" class="btn btn-outline-dark">Learn More</button> </a>
+          </a>
+      </div>
+      <div class="col-lg-3">
+          <a href="humvslat.html">
+              <img src="Images/fig2.png"
+              alt = "City Latitude vs Humidity" height="auto" width="100%">
+              <a href="humvslat.html"> <button type="button" class="btn btn-outline-dark">Learn More</button> </a>
+          </a>
+      </div>
+      <div class="col-lg-3">
+          <a href="windvslat.html">
+              <img src="Images/fig4.png"
+              alt = "City Latitude vs Wind Speed" height="auto" width="100%">
+              <a href="windvslat.html"> <button type="button" class="btn btn-outline-dark">Learn More</button> </a>
+          </a>
+      </div>
+  </div>
+  <hr>
+  </div>
+  </div>
+  </div> 
+
+  <!--Button back to top-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+     <!-- header section -->
+
+     <div class ="footer">
+        <h1>WEB DESIGN HOMEWORK | A PLOT JOURNEY
+  
+          </h1>
+        <p>Created By: Dante Company @2022</p>
+  </div>
+
+</body>
+
+
+</html>

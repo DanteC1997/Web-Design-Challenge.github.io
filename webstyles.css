@@ -1,0 +1,226 @@
+.center {
+  text-align: center;
+}
+
+
+
+
+
+
+
+/* START HEADER SETTINGS */A
+
+/* header settings  - contains name/ brief text quote/image (Dante Company)*/ 
+
+.position {
+   
+  background-color: #f4f4f4;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  position: center;
+}
+
+.DCHeader{
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.DCHeaderText{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+
+
+/* END SETTINGS FOR HEADER SETTINGS / IMAGE / TEXT / NAME */
+
+.color{
+  background-color: rgb(228, 5, 5);
+}
+
+  /*This is all about the footer */
+
+  .footer {
+    padding: 10px;
+    padding-top: 20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+ }
+
+/* grid section index */
+
+/* Float four columns side by side */
+.indexcolumn {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.indexrow {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.indexrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .indexcolumn {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.indexcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+  
+
+* {
+  box-sizing: border-box;
+}
+
+.content-center{
+text-align: center;
+
+}
+
+.grid-background{
+  color: blue;
+  background-color: #8d1818;
+}
+
+ /* text on image learning section*/
+
+ .txtimg {
+  position: relative;
+  text-align: center;
+  color: white;
+ 
+}
+
+.textcentered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  
+}
+
+
+.learnJour{
+font-size: 20px;
+
+
+}
+
+.graph-content{
+  background-color: rgb(247, 247, 247);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+/* CODE NEXT TO CODE IMAGE ON INDEX */
+
+.code-padding{
+
+  margin-bottom: 40px;
+  margin-top: 70px;
+
+}
+
+
+
+@media (min-width: 900px) {
+  .indexgridtxts{ grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 600px) {
+  .indexgridtxts { grid-template-columns: repeat(2, 1fr); }
+}
+
+
+/* WELCOME CODE - IDEX */
+
+.welcome-code{
+  background-color:#f4f4f4;
+  background-color: #f4f4f4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.menu {
+  width: 50%;
+  float: left;
+  
+
+}
+
+.main {
+  width: 50%;
+  float: left;
+  
+
+}
+
+/* plot graph image text */
+
+.txtimgblack {
+  position: relative;
+  text-align: center;
+  color: #000;
+ 
+}
+
+.textcenteredblack {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  
+}
+
+
+.learnJourblack{
+font-size: 20px;
+
+
+}
+
+/* Back to top button */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
